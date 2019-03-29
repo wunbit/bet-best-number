@@ -13,10 +13,12 @@ contract BetBestNumber {
       uint256 numberSelected;
     }
 
-    // The address of the player and => the user info mapping (address=> Player) public playerInfo;
+    // The address of the player and => the user info
+    mapping (address=> Player) public playerInfo;
 
     function BetBestNumber() public {
       owner = msg.sender;
+      if(_minimumBet != 0) minimumBet = _minimumBet;
     }
 
     function kill() public {
