@@ -16,6 +16,10 @@ contract BetBestNumber {
     // The address of the player and => the user info
     mapping (address=> Player) public playerInfo;
 
+    // Fallback functin in case someone sends ether to the contract so it doesn't get lost
+    // and to increase the treasury of this contract that will be distributed in each game
+    function() public payable {}
+
     function BetBestNumber(uint256 _minimumBet) public {
         owner = msg.sender;
         if(_minimumBet != 0) minimumBet = _minimumBet;
@@ -58,9 +62,9 @@ contract BetBestNumber {
         address[100] memory winners; // We have to create a temporary in memory array with fixed size
         uint256 count = 0; // This is the count for the array of winners
 
-      for(uint256 i = 0; i < players.lengthl i++) {
+      for(uint256 i = 0; i < players.length; i++) {
             address playerAddress = players[i];
-            if(playerInfo[playerAddress]).numberSelected == numberWinner) {
+            if(playerInfo[playerAddress].numberSelected == numberWinner) {
                 winners[count] = playerAddress;
                 count++;
             }
