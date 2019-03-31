@@ -1,0 +1,13 @@
+Smart Contract Address
+0x426fFfbf491549Ab50F384c73Cb3b274f86b90fE
+https://ropsten.etherscan.io/address/0x74444b74a5870cd5d5c508e175e112f62e7604e1
+
+Owner
+0x74444b74A5870cd5d5C508e175e112F62E7604e1
+
+Send 0.1 ether bet on 2
+https://ropsten.etherscan.io/tx/0xdf4b87a5f2ae1e66181e47dea27afdc43dcca5658611c789e0e0cad94b0405d9
+
+Send 0.2 bet on 2 with Account 2
+https://ropsten.etherscan.io/tx/0xc5c8cd1a91f9bd61e2e5a92521d8bf4aa7749603664e94c6843f4766d25029be
+https://ropsten.etherscan.io/tx/0x79a87ec6faa5156d48903bf94d5c253666382252103da051cf7c70fdd9cb3242
